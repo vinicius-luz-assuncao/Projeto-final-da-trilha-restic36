@@ -1,2 +1,13 @@
-<app-taskbar></app-taskbar>
+<app-avatar></app-avatar>
+<app-userprofile></app-userprofile>
+
 <router-outlet></router-outlet>
+<app-taskbar class="p-2"></app-taskbar>
+
+<Div class="p-4">
+  <app-card></app-card>
+  <div class="fila">
+    <app-card *ngFor="let video of videos"> </app-card>
+  </div>
+  <router-outlet></router-outlet>
+</Div>

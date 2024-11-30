@@ -1,0 +1,21 @@
+<div class="avatar-container" [matMenuTriggerFor]="menu" *ngIf="showMenu">
+  <img
+    [src]="profile?.picture"
+    [style.width]="size"
+    [style.height]="size"
+    alt="profile?.name"
+  />
+</div>
+
+<img
+  *ngIf="!showMenu"
+  [src]="profile?.picture"
+  [style.width]="size"
+  [style.height]="size"
+  alt="profile?.name"
+/>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="redirectToProfile()">Ver perfil</button>
+  <button mat-menu-item (click)="logout()">Logout</button>
+</mat-menu>
