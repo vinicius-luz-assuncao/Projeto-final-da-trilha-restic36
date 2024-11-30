@@ -8,11 +8,12 @@ import { CardComponent } from "./shared/components/card/card.component";
 import { AuthService } from '@auth0/auth0-angular';
 import { AvatarComponent } from "./shared/components/avatar/avatar.component";
 import { UserprofileComponent } from "./shared/components/userprofile/userprofile.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TaskbarComponent, MatIconModule, MatIconModule, MatButtonModule, MatInputModule, CardComponent, AvatarComponent, UserprofileComponent],
+  imports: [CommonModule, RouterOutlet, TaskbarComponent, MatIconModule, MatIconModule, MatButtonModule, MatInputModule, CardComponent, AvatarComponent, UserprofileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -20,6 +21,8 @@ import { UserprofileComponent } from "./shared/components/userprofile/userprofil
 
 export class AppComponent {
   title = 'absolute-cinema-project';
+  tela: any;
+
 
   constructor(private auth: AuthService, private router: Router) { }
 

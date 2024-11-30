@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+import { SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Video } from '../../../interfaces/video';
 import { VideoService } from '../../services/video.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [MatIconModule],
+  imports: [MatIconModule, CommonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })

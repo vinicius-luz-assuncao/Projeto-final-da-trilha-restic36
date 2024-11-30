@@ -1,4 +1,5 @@
 <button
+  *ngIf="(auth.isAuthenticated$ | async) === false"
   (click)="login()"
   class="btn btn-outline-primary rounded rounded-pill text-center align-middle gap-2"
   style="display: inline-block"
@@ -6,31 +7,13 @@
   <mat-icon class="align-middle">account_circle</mat-icon>
   <span class="align-middle">Sign in</span>
 </button>
-<!-- 
-<div *ngIf="auth.isAuthenticated$ | async; else notLoggedIn">
-  <button (click)="logout()" class="btn btn-primary">Log out</button>
-</div>
-<ng-template #notLoggedIn>
-  <button (click)="login()" class="btn btn-outline-primary">Sign in</button>
-</ng-template> -->
 
-<!-- 
-<div class="nav-item" *ngIf="auth.isAuthenticated$ | async">
-  <button
-    class="btn btn-primary btn-margin mt-3"
-    style="min-width: unset"
-    id="qsLogoutBtn"
-    (click)="logout()"
-  >
-    Log out
-  </button>
-</div>
-<div *ngIf="(auth.isAuthenticated$ | async) === false">
-  <button
-    id="qsLoginBtn"
-    class="btn btn-primary btn-margin mt-3"
-    (click)="login()"
-  >
-    Log in
-  </button>
-</div> -->
+<button
+  *ngIf="auth.isAuthenticated$ | async"
+  (click)="logout()"
+  class="btn btn-outline-primary rounded rounded-pill text-center align-middle gap-2"
+  style="display: inline-block"
+>
+  <mat-icon class="align-middle">check_circle</mat-icon>
+  <span class="align-middle">Log out</span>
+</button>

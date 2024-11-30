@@ -30,341 +30,338 @@
     </div>
   </div>
 
-  <p>video works!</p>
-  <div class="nav-bar">
-    <div *ngIf="video" class="tela">
-      <iframe *ngIf="safeUrl" [src]="safeUrl" frameborder="0"></iframe>
-      <div class="video-info"></div>
-    </div>
-    <!-- cards preenchendo layout por hora -->
+  <div *ngIf="video" class="tela">
+    <iframe title="video" *ngIf="safeUrl" [src]="safeUrl"></iframe>
+    <div class="video-info"></div>
+  </div>
+  <!-- cards preenchendo layout por hora -->
 
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4 position-relative">
-          <img
-            src="images/video-thumbnail.jpg"
-            class="img-fluid rounded-start h-100"
-            alt="Miniatura do Vídeo"
-          />
-          <button
-            class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+  </div>
+  <div class="card mb-3" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-4 position-relative">
+        <img
+          src="images/video-thumbnail.jpg"
+          class="img-fluid rounded-start h-100"
+          alt="Miniatura do Vídeo"
+        />
+        <button
+          class="btn d-flex p-2 rounded-circle btn-outline-secondary position-absolute top-0 end-0 m-2 favorite-btn"
+        >
+          <mat-icon class="material-icons-outlined favorite-icon"
+            >favorite_border</mat-icon
           >
-            <mat-icon class="material-icons-outlined favorite-icon"
-              >favorite_border</mat-icon
-            >
-          </button>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Título do Vídeo</h5>
-            <p class="card-text text-truncate">
-              Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
-              rápida do conteúdo.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">1000 visualizações</small>
-            </p>
-          </div>
+        </button>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Título do Vídeo</h5>
+          <p class="card-text text-truncate">
+            Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
+            rápida do conteúdo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">1000 visualizações</small>
+          </p>
         </div>
       </div>
     </div>
