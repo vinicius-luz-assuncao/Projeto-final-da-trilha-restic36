@@ -1,8 +1,41 @@
-<p>taskbar works!</p>
+<div class="d-flex align-items-center p-3 gap-4">
+  <a class="btn p-2 rounded-circle d-flex btn-primary" href="#">
+    <mat-icon>menu</mat-icon>
+  </a>
 
-<div class="taskbar01">
-  <div class="">
-    <div class="yt-icon-button"><mat-icon>menu</mat-icon></div>
-    <button class="signin"><mat-icon>account_circle</mat-icon> Sign in</button>
+  <button
+    class="btn btn-outline-primary rounded rounded-pill text-center align-middle gap-2"
+    style="display: inline-block"
+  >
+    <mat-icon class="align-middle">account_circle</mat-icon>
+    <span class="align-middle">Sign in</span>
+  </button>
+
+  <div class="logo d-flex align-items-center rounded">
+    <img
+      src="images/absolute_cinema_logo.png"
+      alt="Logo"
+      width="40"
+      height="40"
+    />
+    <span class="ms-3 fw-bold">Absolute Cinema</span>
   </div>
+</div>
+<div class="flex-grow-1 mw-50">
+  <form class="d-flex">
+    <input
+      id="Search"
+      class="form-control"
+      type="search"
+      placeholder="Buscar"
+      aria-label="Search"
+    />
+    <button
+      id="Searchicon"
+      class="btn btn-outline-secondary d-flex align-items-center"
+      type="submit"
+    >
+      <mat-icon>search</mat-icon>
+    </button>
+  </form>
 </div>
