@@ -1,42 +1,24 @@
-import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { SafeResourceUrl } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router';
-import { Video } from '../../../interfaces/video';
-import { VideoService } from '../../services/video.service';
+import { Component, Input } from '@angular/core';
+
+import { Router } from '@angular/router';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { Video } from '../../../interfaces/video';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [MatIconModule, CommonModule],
+  imports: [MatIcon, CommonModule, MatIconModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+  @Input() video!: Video;
 
-  video?: Video;
-  safeUrl?: SafeResourceUrl;
+  constructor(private router: Router) { }
 
-  constructor(
-    private route: ActivatedRoute,
-    private videoService: VideoService) { }
-
-  ngOnInit(): void {
-    // Inicializa o primeiro vídeo
-    this.route.paramMap.subscribe((params) => {
-      const videoId = params.get('id');
-      if (videoId) {
-        this.loadVideo(videoId);
-      }
-    });
+  redirectToVideo(): void {
+    this.router.navigate(['/video', this.video.id]);
   }
-
-  loadVideo(id: string): void {
-    this.videoService.getVideoById(id).subscribe((video) => {
-      this.video = video;
-    });
-  }
-
-
 }
+

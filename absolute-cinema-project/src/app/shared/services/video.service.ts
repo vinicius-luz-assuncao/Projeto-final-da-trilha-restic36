@@ -21,3 +21,5 @@ export class VideoService {
     return this.http.get<Video>(`${this.apiUrl}/${id}`);
   }
 }
+export type { Video };
+

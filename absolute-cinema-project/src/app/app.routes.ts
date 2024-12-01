@@ -4,22 +4,32 @@ import { AppComponent } from './app.component';
 import { UserprofileComponent } from './shared/components/userprofile/userprofile.component';
 import { userprofileGuard } from './guards/userprofile.guard';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { LoginComponent } from './shared/components/login/login.component';
+import { TelaComponent } from './shared/components/tela/tela.component';
 
 export const routes: Routes = [
+
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
+
+
+    { path: 'login', component: LoginComponent },
+
+
+    { path: 'home', component: HomepageComponent, canActivate: [authGuardFn] },
+
+
+    { path: 'video/:id', component: TelaComponent },
+
+    { path: 'userprofile', component: UserprofileComponent },
+
+    { path: '**', redirectTo: 'login' },
+
 
     {
         path: '',
         pathMatch: 'full',
         redirectTo: 'home',
     },
-
-    {
-        path: 'home',
-        component: HomepageComponent,
-    },
-
-    { path: '', redirectTo: 'home03', pathMatch: 'full' },
-    { path: 'home02', component: HomepageComponent, canActivate: [authGuardFn] },
 
     {
         path: 'userprofile',
