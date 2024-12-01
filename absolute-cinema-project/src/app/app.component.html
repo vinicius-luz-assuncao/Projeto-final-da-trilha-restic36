@@ -1,4 +1,14 @@
 <app-taskbar class="p-2"></app-taskbar>
-<Div class="p-4">
-  <router-outlet></router-outlet>
-</Div>
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <app-menu></app-menu>
+    </div>
+
+    <div class="col-12 col-md-9">
+      <div class="p-4">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

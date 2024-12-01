@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { AuthService } from '@auth0/auth0-angular';
 import { CommonModule } from '@angular/common';
+import { MenuComponent } from "./shared/components/menu/menu.component";
 
 
 @Component({
@@ -18,7 +19,7 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     MatButtonModule,
     MatInputModule,
-
+    MenuComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
