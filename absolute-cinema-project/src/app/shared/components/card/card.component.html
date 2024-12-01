@@ -1,14 +1,12 @@
-<div *ngIf="video" class="d-flex flex-wrap gap-3">
-  <div
-    class="card bg-secondary mb-3"
-    (click)="redirectToVideo()"
-    style="max-width: 540px"
-  >
+<!-- *ngIf="video" -->
+
+<div class="d-flex flex-wrap gap-3">
+  <div class="card mb-3" (click)="redirectToVideo()" style="max-width: 540px">
     <div class="row g-0">
       <div class="col-md-4 position-relative">
         <img
-          [src]="video?.thumbnail"
-          [alt]="video?.title"
+          [src]="video.thumbnail"
+          [alt]="video.title"
           class="img-fluid rounded-start h-100"
         />
         <button
@@ -21,7 +19,7 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{ video?.title }}</h5>
+          <h5 class="card-title">{{ video.title }}</h5>
           <p class="card-text text-truncate">
             Esta é uma breve descrição do vídeo. Ela oferece uma visão geral
             rápida do conteúdo.

@@ -1,9 +1,1 @@
-<p>tela works!</p>
-
-<div *ngIf="video" class="tela">
-  <iframe *ngIf="safeUrl" [src]="safeUrl" frameborder="0"></iframe>
-  <div class="video-info">
-    <h1>{{ video.title }}</h1>
-    <p>{{ video.description }}</p>
-  </div>
-</div>
+<app-card *ngFor="let video of videos$ | async" [video]="video"></app-card>

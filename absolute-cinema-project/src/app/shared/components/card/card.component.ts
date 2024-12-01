@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { Video } from '../../../interfaces/video';
+import { Observable, Subscribable } from 'rxjs';
 
 @Component({
   selector: 'app-card',
@@ -14,8 +15,9 @@ import { Video } from '../../../interfaces/video';
 })
 export class CardComponent {
   @Input() video!: Video;
+  video$: Observable<unknown> | Subscribable<unknown> | Promise<unknown> | undefined;
 
-  constructor(private router: Router) { }
+  constructor(private readonly router: Router) { }
 
   redirectToVideo(): void {
     this.router.navigate(['/video', this.video.id]);
